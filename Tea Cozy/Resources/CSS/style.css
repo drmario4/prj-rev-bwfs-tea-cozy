@@ -1,0 +1,187 @@
+/* * {
+  border: 1px solid red;
+} */
+
+  /*-- set page-wide specs */
+body {
+    margin: 0;
+    font-family: "Helvetica", sans-serif;
+    color: seashell;
+    background-color: black;
+    font-size: 22px;
+    text-align: center;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-container .items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Logo display style */
+.logo {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 30px;
+}
+/* set how the Header displays */
+header {
+  position: fixed;
+  z-index: 1;
+  align-items: center;
+  width: 100%;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+/* set how the logo image displays within the top header */
+header img {
+  height: 50px;
+  margin 10px;
+}
+
+/* we need to style the color of the links with the a tag directly.  Can't do it with the nav or span */
+a {
+  text-decoration: underline;
+  color: seashell;
+}
+
+/* style the last, right-most link so there is some space between IT and the container border */
+.far-right {
+  margin-right: 10px;
+}
+
+div {
+  display:block;
+}
+
+.main {
+  padding-top: 69px;
+  opacity: 0.9;
+  width: 1200px;
+  margin: auto;
+}
+
+.image-content {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+  height: 700px;
+  width: 1300px;
+  margin-top: 0;
+  font-size: 40px;
+  text-align: center;
+}
+
+.item img {
+    height: 200px;
+    margin: 10px;
+    display: block;
+}
+
+/* style for h2,h3,h4 mission text */
+h2, h3, h4 {
+    margin: 0;
+    padding: 10px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+-webkit-margin-after: 0.83em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+h4 {
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+/* Mission statement and the content line below */
+#mission .content {
+    margin: auto;
+    background-color: black;
+    width: 100%;
+}
+
+#mission {
+    height: 700px;
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+    padding-top: 70px;
+}
+
+#store {
+    height: 1000px;
+    width: 1000px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.item {
+    padding: 5px;
+}
+
+#locations {
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+    height: 500px;
+    padding-top: 70px;
+}
+
+#locations .flex-container {
+    margin: auto;
+    width: 1100px;
+}
+
+.location {
+    opacity: 1.0;
+    padding: 10px;
+    margin: 5px 20px;
+    background-color: black;
+    flex-basis: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact {
+    height: 200px;
+}
+
+footer {
+    text-align: left;
+    padding-left: 20px;
+}
+
+h5 {
+    display: block;
+    font-size: 0.83em;
+    -webkit-margin-before: 1.67em;
+    -webkit-margin-after: 1.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
